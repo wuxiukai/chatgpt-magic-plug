@@ -15,7 +15,7 @@ class OpenAi:
         self.url = "https://api.openai.com/v1/completions"
 
     def get_answer(self,prompt,max_tokens,temperature):
-        keys = configs['keys']
+        keys = configs['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']
         key = random.choices(keys)
         api_key = key[0]
         if max_tokens <= 4096 and temperature <= 0.9:
